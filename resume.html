@@ -1,189 +1,159 @@
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-	  <meta charset="UTF-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  <title>Neha Sahani - Resume</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neha Sahani - Resume</title>
 
-	  <!-- html2pdf.js CDN -->
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      padding: 40px;
+    }
 
-	  <style>
-		body {
-		  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-		  background: #f9f9f9;
-		  color: #333;
-		  padding: 40px;
-		}
+    h1 {
+      font-size: 28px;
+      color: #004080;
+      margin-bottom: 5px;
+    }
 
-		h1 {
-		  font-size: 28px;
-		  color: #004080;
-		  margin-bottom: 5px;
-		}
+    h2 {
+      color: #004080;
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
 
-		h2 {
-		  color: #004080;
-		  font-size: 20px;
-		  margin-top: 30px;
-		  margin-bottom: 10px;
-		}
+    p, li {
+      font-size: 14px;
+      margin: 4px 0;
+    }
 
-		p, li {
-		  font-size: 14px;
-		  margin: 4px 0;
-		}
+    ul {
+      padding-left: 25px;
+    }
 
-		ul {
-		  padding-left: 25px;
-		}
+    .section {
+      margin-bottom: 30px;
+    }
 
-		.section {
-		  margin-bottom: 30px;
-		}
+    .contact p {
+      margin: 4px 0;
+    }
 
-		.contact p {
-		  margin: 4px 0;
-		}
+    .education-entry {
+      margin-bottom: 25px;
+    }
 
-		button {
-		  background-color: #004080;
-		  color: white;
-		  padding: 10px 20px;
-		  font-size: 15px;
-		  border: none;
-		  border-radius: 5px;
-		  margin-bottom: 25px;
-		  cursor: pointer;
-		}
+    .education-entry p:nth-child(1) {
+      font-weight: bold;
+    }
 
-		.education-entry {
-		  margin-bottom: 25px;
-		}
+    .education-entry p:nth-child(2) {
+      font-style: italic;
+    }
 
-		.education-entry p:nth-child(1) {
-		  font-weight: bold;
-		}
+    .education-entry p:nth-child(3) {
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
 
-		.education-entry p:nth-child(2) {
-		  font-style: italic;
-		}
+  <div id="resume">
+    <h1>Neha Sahani</h1>
+    <div class="contact section">
+      <p><strong>Role:</strong> Software Engineer</p>
+      <p><strong>Location:</strong> Bengaluru, Karnataka</p>
+      <p><strong>Phone:</strong> +91 8147717002</p>
+      <p><strong>Email:</strong> <a href="mailto:sahanineha9087@gmail.com">sahanineha9087@gmail.com</a></p>
+    </div>
 
-		.education-entry p:nth-child(3) {
-		  text-transform: uppercase;
-		}
-	  </style>
-	</head>
-	<body>
+    <div class="section">
+      <h2>Professional Summary</h2>
+      <p>Versatile DevOps and Support Engineer with 6+ years of experience in telecom and healthcare domains. Skilled in automating deployments, monitoring systems, and managing projects using Bash, Jenkins, SQL, Docker, AWS, and Terraform. Strong in Oracle app troubleshooting and performance optimization.</p>
+    </div>
 
-	  <button onclick="downloadPDF()">Download as PDF</button>
+    <div class="section">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Designed Jenkins CI/CD pipeline with Docker, improving deployment efficiency by 40%.</li>
+        <li>Built a monitoring system with automated alerts, reducing downtime by 30%.</li>
+        <li>Implemented load balancing, improving system stability by 25%.</li>
+        <li>Integrated SonarQube for automated code quality checks.</li>
+        <li>Automated environment monitoring and alerting via Jenkins pipelines and cron jobs.</li>
+        <li>Established a centralized documentation system to boost team productivity.</li>
+      </ul>
+    </div>
 
-	  <div id="resume">
-		<h1>Neha Sahani</h1>
-		<div class="contact section">
-		  <p><strong>Role:</strong> Software Engineer</p>
-		  <p><strong>Location:</strong> Bengaluru, Karnataka</p>
-		  <p><strong>Phone:</strong> +91 8147717002</p>
-		  <p><strong>Email:</strong> <a href="mailto:sahanineha9087@gmail.com">sahanineha9087@gmail.com</a></p>
-		</div>
+    <div class="section">
+      <h2>Core Skills & Technical Proficiencies</h2>
+      <ul>
+        <li><strong>Scripting:</strong> Bash/Shell</li>
+        <li><strong>CI/CD Tools:</strong> Jenkins, Git, GitLab, GitHub, Docker, Ansible (basic), Kubernetes (basic)</li>
+        <li><strong>Monitoring & Logging:</strong> ServiceNow, Remedy, Supportal</li>
+        <li><strong>Cloud:</strong> AWS</li>
+        <li><strong>Database:</strong> SQL, PLSQL (basic)</li>
+        <li><strong>GUI Tools:</strong> WebLogic Console, SQL Developer, Jenkins GUI, VS Code, Millennium, SonarQube</li>
+        <li><strong>Networking Tools:</strong> PuTTY, FileZilla FTP, Cisco Jabber, Avaya, Genesys</li>
+        <li><strong>IaC:</strong> Terraform</li>
+      </ul>
+    </div>
 
-		<div class="section">
-		  <h2>Professional Summary</h2>
-		  <p>Versatile DevOps and Support Engineer with 6+ years of experience in telecom and healthcare domains. Skilled in automating deployments, monitoring systems, and managing projects using Bash, Jenkins, SQL, Docker, AWS, and Terraform. Strong in Oracle app troubleshooting and performance optimization.</p>
-		</div>
+    <div class="section">
+      <h2>Professional Experience</h2>
 
-		<div class="section">
-		  <h2>Achievements</h2>
-		  <ul>
-			<li>Designed Jenkins CI/CD pipeline with Docker, improving deployment efficiency by 40%.</li>
-			<li>Built a monitoring system with automated alerts, reducing downtime by 30%.</li>
-			<li>Implemented load balancing, improving system stability by 25%.</li>
-			<li>Integrated SonarQube for automated code quality checks.</li>
-			<li>Automated environment monitoring and alerting via Jenkins pipelines and cron jobs.</li>
-			<li>Established a centralized documentation system to boost team productivity.</li>
-		  </ul>
-		</div>
+      <p><strong>Oracle Cerner Healthcare Solutions India Pvt. Ltd</strong>, Bengaluru, IN<br/>
+      <em>Technical Solution Analyst 2</em> (Jan 2023 – Dec 2024)</p>
+      <ul>
+        <li>Performed root cause analysis and implemented preventive fixes.</li>
+        <li>Worked with teams to enhance system stability and resolve challenges.</li>
+        <li>Provided support and incident response for application issues.</li>
+        <li>Maintained technical documentation and process best practices.</li>
+      </ul>
 
-		<div class="section">
-		  <h2>Core Skills & Technical Proficiencies</h2>
-		  <ul>
-			<li><strong>Scripting:</strong> Bash/Shell</li>
-			<li><strong>CI/CD Tools:</strong> Jenkins, Git, GitLab, GitHub, Docker, Ansible (basic), Kubernetes (basic)</li>
-			<li><strong>Monitoring & Logging:</strong> ServiceNow, Remedy, Supportal</li>
-			<li><strong>Cloud:</strong> AWS</li>
-			<li><strong>Database:</strong> SQL, PLSQL (basic)</li>
-			<li><strong>GUI Tools:</strong> WebLogic Console, SQL Developer, Jenkins GUI, VS Code, Millennium, SonarQube</li>
-			<li><strong>Networking Tools:</strong> PuTTY, FileZilla FTP, Cisco Jabber, Avaya, Genesys</li>
-			<li><strong>IaC:</strong> Terraform</li>
-		  </ul>
-		</div>
+      <p><strong>Tech Mahindra Ltd</strong>, Pune, IN<br/>
+      <em>Software Engineer</em> (May 2019 – Dec 2022)</p>
+      <ul>
+        <li>Managed CI/CD pipelines and build troubleshooting.</li>
+        <li>Led a team of 3 in DevOps operations.</li>
+        <li>Assisted in OS migration to improve app reliability.</li>
+        <li>Followed security standards in automation.</li>
+      </ul>
 
-		<div class="section">
-		  <h2>Professional Experience</h2>
+      <p><strong>Tech Mahindra Ltd</strong>, Pune, IN<br/>
+      <em>Associate Software Engineer</em> (May 2018 – Apr 2019)</p>
+      <ul>
+        <li>Set up monitoring tools for system health.</li>
+        <li>Automated tasks using Bash to save manual effort.</li>
+        <li>Supported deployment for key business applications.</li>
+      </ul>
+    </div>
 
-		  <p><strong>Oracle Cerner Healthcare Solutions India Pvt. Ltd</strong>, Bengaluru, IN<br/>
-		  <em>Technical Solution Analyst 2</em> (Jan 2023 – Dec 2024)</p>
-		  <ul>
-			<li>Performed root cause analysis and implemented preventive fixes.</li>
-			<li>Worked with teams to enhance system stability and resolve challenges.</li>
-			<li>Provided support and incident response for application issues.</li>
-			<li>Maintained technical documentation and process best practices.</li>
-		  </ul>
+    <div class="section">
+      <h2>Certifications & Learning</h2>
+      <ul>
+        <li>AWS Certified Cloud Practitioner (CLF-C02)</li>
+      </ul>
+    </div>
 
-		  <p><strong>Tech Mahindra Ltd</strong>, Pune, IN<br/>
-		  <em>Software Engineer</em> (May 2019 – Dec 2022)</p>
-		  <ul>
-			<li>Managed CI/CD pipelines and build troubleshooting.</li>
-			<li>Led a team of 3 in DevOps operations.</li>
-			<li>Assisted in OS migration to improve app reliability.</li>
-			<li>Followed security standards in automation.</li>
-		  </ul>
+    <div class="section">
+      <h2>Education</h2>
+      <div class="education-entry">
+        <p>IIIT, Bangalore, IN</p>
+        <p>Executive Post Graduate Programme in Software development (3.14/4)</p>
+        <p>SEP 2022 - OCT 2023</p>
+      </div>
 
-		  <p><strong>Tech Mahindra Ltd</strong>, Pune, IN<br/>
-		  <em>Associate Software Engineer</em> (May 2018 – Apr 2019)</p>
-		  <ul>
-			<li>Set up monitoring tools for system health.</li>
-			<li>Automated tasks using Bash to save manual effort.</li>
-			<li>Supported deployment for key business applications.</li>
-		  </ul>
-		</div>
+      <div class="education-entry">
+        <p>SJCIT College of Engineering, Chikkaballapur, IN</p>
+        <p>Bachelor of Engineering (B.E)</p>
+        <p>AUG 2013 - JUN 2017</p>
+      </div>
+    </div>
+  </div>
 
-		<div class="section">
-		  <h2>Certifications & Learning</h2>
-		  <ul>
-			<li>AWS Certified Cloud Practitioner (CLF-C02)</li>
-		  </ul>
-		</div>
-
-		<div class="section">
-		  <h2>Education</h2>
-		  <div class="education-entry">
-			<p>IIIT, Bangalore, IN</p>
-			<p>Executive Post Graduate Programme in Software development (3.14/4)</p>
-			<p>SEP 2022 - OCT 2023</p>
-		  </div>
-
-		  <div class="education-entry">
-			<p>SJCIT College of Engineering, Chikkaballapur, IN</p>
-			<p>Bachelor of Engineering (B.E)</p>
-			<p>AUG 2013 - JUN 2017</p>
-		  </div>
-		</div>
-	  </div>
-
-	  <script>
-		function downloadPDF() {
-		  const element = document.getElementById("resume");
-		  const opt = {
-			margin:       0.5,
-			filename:     'neha-sahani-resume.pdf',
-			image:        { type: 'jpeg', quality: 0.98 },
-			html2canvas:  { scale: 2 },
-			jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
-		  };
-		  html2pdf().set(opt).from(element).save();
-		}
-	  </script>
-
-	</body>
-	</html>
+</body>
+</html>
